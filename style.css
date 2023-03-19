@@ -1,0 +1,184 @@
+/* body
+---------------------------------------------------*/
+html, body{
+    height: 100%;
+  }
+  /* NAVBAR
+  -------------------------------------------------- */
+  
+  .navbar {
+    margin-bottom: 100;
+  }
+  
+  /* navbar */
+  .navbar-default {
+      background-color: #050505;
+      border-color: #D7FFFF;
+  }
+  /* Title */
+  .navbar-default .navbar-brand {
+      color: #070707;
+  }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+      color: #020202;
+  }
+  /* Link */
+  .navbar-default .navbar-nav > li > a {
+      color: #8BF7EB;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+      color: #002B1F;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+      color: #005347;
+      background-color: #80ECE0;
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+      color: #005347;
+      background-color: #80ECE0;
+  }
+  /* Caret */
+  .navbar-default .navbar-nav > .dropdown > a .caret {
+      border-top-color: #8BF7EB;
+      border-bottom-color: #8BF7EB;
+  }
+  .navbar-default .navbar-nav > .dropdown > a:hover .caret,
+  .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+      border-top-color: #002B1F;
+      border-bottom-color: #002B1F;
+  }
+  .navbar-default .navbar-nav > .open > a .caret,
+  .navbar-default .navbar-nav > .open > a:hover .caret,
+  .navbar-default .navbar-nav > .open > a:focus .caret {
+      border-top-color: #005347;
+      border-bottom-color: #005347;
+  }
+  /* Mobile version */
+  .navbar-default .navbar-toggle {
+      border-color: #90FCF0;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+      background-color: #90FCF0;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+      background-color: #BEFFFF;
+  }
+  @media (max-width: 767px) {
+      .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+          color: #8BF7EB;
+      }
+      .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+      .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #002B1F;
+      }
+  }
+  
+  /* CUSTOMIZED CAROUSEL
+  -------------------------------------------------- */
+   @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+  /* Carousel base class */
+  .carousel {
+    height: 240px;
+    margin-bottom: 30px;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 240px;
+    background-color: #48B4A8;
+  }
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 240px;
+  }
+  
+  @media (min-width: 768px) {
+  
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 20px;
+      font-size: 21px;
+      line-height: 1.4;
+    }
+  
+  }
+  
+  /* MARKETING
+  -------------------------------------------------- */
+  
+  .marketing {
+    margin: 60px auto;
+    padding: 60px auto;
+    margin-bottom: -160px;
+  }
+  .marketing .row{
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .marketing .col-md-4 {
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .marketing .col-md-4 .glyphicon {
+    font-size: 60px;
+    background-color: #F0FFFF;
+    border-radius: 50%;
+    padding: 40px;
+    color: #71B3DD;
+  }
+  
+  .marketing:after{
+    content: "";
+    display: block;
+    height: 160px;
+  }
+  /* STICKY FOOTER
+  -------------------------------------------------- */
+  
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 160px;
+  }
+  
+  .footer,
+  footer {
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 160px;
+    background: #48B4A8;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 40px 0;
+  }
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
